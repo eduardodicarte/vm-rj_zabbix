@@ -11,6 +11,10 @@ Vagrant.configure(VAGRANT_FILE_VERSION) do |config|
   config.ssh.password  = 'vagrant'
   config.ssh.insert_key = 'true'
 
+  config.vm.define :rjzbx do |rjzbx|
+	   rjzbx.vm.network "private_network", ip: "192.164.120.10"
+  end
+
  # config.librarian_puppet.puppetfile_dir       = 'puppet'
   #config.librarian_puppet.placeholder_filename = '.gitkeep'
   #config.librarian_puppet.resolve_options      = { :force => true }
@@ -21,4 +25,6 @@ Vagrant.configure(VAGRANT_FILE_VERSION) do |config|
   	puppet.environment 	= "development"
  	puppet.module_path      = "puppet/modules"
   end
+
+
 end
