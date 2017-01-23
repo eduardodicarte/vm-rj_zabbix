@@ -15,7 +15,7 @@ Vagrant.configure(VAGRANT_FILE_VERSION) do |config|
 	   rjzbx.vm.network "private_network", ip: "192.164.120.10"
   end
 
- # config.librarian_puppet.puppetfile_dir       = 'puppet'
+  #config.librarian_puppet.puppetfile_dir       = 'puppet'
   #config.librarian_puppet.placeholder_filename = '.gitkeep'
   #config.librarian_puppet.resolve_options      = { :force => true }
   #config.librarian_puppet.desctructive         = false
