@@ -4,3 +4,6 @@ forge 'http://forge.puppetlabs.com'
 
 mod 'rj-zabbix',
 	:git => "https://github.com/eduardodicarte/rj-zabbix.git"
+
+mod 'rj-firewall',
+	:git => "https://github.com/eduardodicarte/rj-firewall.git"
