@@ -1,10 +1,7 @@
 node default {
-		contain zabbix
-		contain firewall
-
 		#Provisionamento do Zabbix Server
-		Class['zabbix'] ->
+		include zabbix
 
 		#Provisionamento do Firewall
-		Class['firewall']
+		include firewall
 }
