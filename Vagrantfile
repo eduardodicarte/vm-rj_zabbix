@@ -12,7 +12,7 @@ Vagrant.configure(VAGRANT_FILE_VERSION) do |config|
   config.ssh.insert_key = 'true'
 
   config.vm.define :rjzbx do |rjzbx|
-	   rjzbx.vm.network "private_network", ip: "192.164.120.10"
+	   rjzbx.vm.network "private_network", ip: "192.168.0.219"
   end
 
   config.librarian_puppet.puppetfile_dir       = 'puppet'
